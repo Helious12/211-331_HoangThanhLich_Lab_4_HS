@@ -1,0 +1,85 @@
+/* App.css */
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+input, select {
+  padding: 8px;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.check {
+  background-color: #007bff;
+  color: white;
+}
+
+button.buy {
+  background-color: #28a745;
+  color: white;
+}
+
+button.sell {
+  background-color: #dc3545;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead {
+  background-color: #eee;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+td.buy {
+  background-color: #e6f9e8;
+  color: green;
+  font-weight: bold;
+}
+
+td.sell {
+  background-color: #ffe6e6;
+  color: red;
+  font-weight: bold;
+}

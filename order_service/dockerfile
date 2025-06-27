@@ -1,0 +1,7 @@
+FROM python:3.10-slim
+WORKDIR /app
+RUN apt-get update && apt-get install -y postgresql-client
+COPY app ./app
+RUN pip install fastapi uvicorn psycopg2-binary prometheus_fastapi_instrumentator requests pika sqlalchemy httpx
+# PORT sẽ được chỉ định trong CMD dưới đây
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8003"]
